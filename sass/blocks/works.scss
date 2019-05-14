@@ -1,0 +1,24 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.works__list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works__item {
+  margin-left: 20px;
+  padding: 10px;
+
+  border: 1px solid gray;
+}
+
+.works__text {
+  text-align: center;
+}

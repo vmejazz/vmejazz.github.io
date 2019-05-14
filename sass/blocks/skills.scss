@@ -1,0 +1,24 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skills__list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__item {
+  margin-left: 20px;
+  padding: 10px;
+
+  border: 1px solid gray;
+}
+
+.skills__text {
+  text-align: center;
+}

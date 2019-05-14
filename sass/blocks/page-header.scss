@@ -1,0 +1,31 @@
+.maintenance {
+  display: flex;
+
+  background-color: #81d5fa;
+}
+
+.maintenance__logo {
+  width: 70%;
+}
+
+.maintenance__logo-img {
+  width: 100%;
+  height: auto;
+}
+
+.maintenance__descr {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 20px;
+}
+
+.maintenance__text {
+  margin: 0 auto;
+}
+
+.maintenance__title {
+  margin: 15px auto;
+
+  text-transform: uppercase;
+}

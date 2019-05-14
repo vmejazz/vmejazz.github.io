@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  background-color: honeydew;
+}
+
+.navigation__list {
+  @include list-reset ();
+
+  display: flex;
+}
+
+.navigation__about-me {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  vertical-align: top;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+  vertical-align: top;
+}

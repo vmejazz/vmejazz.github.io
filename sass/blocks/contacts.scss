@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contacts__list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  margin-left: 20px;
+  padding: 10px;
+
+  border: 1px solid gray;
+}
+
+.contacts__text {
+  text-align: center;
+}

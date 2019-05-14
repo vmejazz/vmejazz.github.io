@@ -1,0 +1,24 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.services__list {
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  margin-left: 20px;
+  padding: 10px;
+
+  border: 1px solid gray;
+}
+
+.services__text {
+  text-align: center;
+}

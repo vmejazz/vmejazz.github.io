@@ -1,0 +1,380 @@
+.page-main {
+  @media (min-width: $tablet) {
+    margin-top: -74px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+  }
+}
+
+.page-main__header {
+  @include retina {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 373px;
+  }
+
+  width: 100%;
+  height: 285px;
+
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -16px;
+
+  &--catalog,
+  &--form {
+    height: 178px;
+
+    background-color: #f1f1f1;
+    background-image: none;
+  }
+
+  &--form .page-main__header-title {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  @media (min-width: $tablet) {
+    @include retina {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+
+    position: relative;
+
+    height: 746px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 1px;
+    background-size: cover;
+
+    &--catalog,
+    &--form {
+      height: 226px;
+
+      background-color: #f1f1f1;
+      background-image: none;
+    }
+
+    &--catalog .page-main__header-title {
+      padding-top: 97px;
+    }
+
+    &--form .page-main__header-title {
+      padding-top: 96px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 100% auto;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    @include retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
+
+    width: 100%;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 0 -1px;
+
+    &--catalog .page-main__header-title {
+      padding-top: 93px;
+    }
+
+    &--form .page-main__header-title {
+      padding-top: 93px;
+    }
+
+    &::after {
+      bottom: -15px;
+      left: -50px;
+
+      width: 1250px;
+      height: 34px;
+    }
+
+    &--catalog,
+    &--form {
+      height: 255px;
+
+      background-color: #f1f1f1;
+      background-image: none;
+
+      &::after {
+        bottom: -15px;
+        left: 0;
+
+        width: 1150px;
+        height: 34px;
+      }
+    }
+  }
+}
+
+.page-main__header-title {
+  margin: 0;
+  padding-top: 72px;
+  padding-right: 38px;
+  padding-bottom: 0;
+  padding-left: 38px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #010000;
+
+  @media (min-width: $tablet) {
+    padding-top: 155px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 153px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.page-main__header-top {
+  position: absolute;
+  top: 25px;
+
+  display: none;
+  padding-right: 50px;
+
+  @media (min-width: $tablet) {
+    top: 19px;
+
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    top: 17px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+}
+
+.info-delivery {
+  @media (min-width: $tablet) {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 50px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+.page-main__nav {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.page-main__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-main__nav-item {
+  @media (min-width: $desktop) {
+    min-width: 175px;
+    padding-right: 62px;
+  }
+}
+
+.page-main__nav-link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-main__product-card {
+  position: relative;
+
+  margin-top: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transform: scaleY(-1);
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -70px;
+
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 121px;
+
+    &::after {
+      position: relative;
+
+      height: 23px;
+    }
+  }
+}
+
+.page-main__about-item {
+  margin-top: 69px;
+
+  @media (min-width: $tablet) {
+    margin-top: 118px;
+    margin-bottom: 92px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 133px;
+    margin-bottom: 96px;
+  }
+}
+
+.page-main__reviews {
+  position: relative;
+
+  margin-top: -28px;
+  margin-bottom: 86px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -51px;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transform: scaleY(-1);
+
+    @media (min-width: $tablet) {
+      bottom: -68px;
+
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: -25px;
+    margin-bottom: 129px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -28px;
+
+
+    &::after {
+      bottom: -120px;
+
+      max-width: 1050px;
+      height: 23px;
+      margin: 0 50px;
+    }
+  }
+}
+
+.page-main__contacts {
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 190px;
+    margin-bottom: 95px;
+  }
+}
+
+.catalog-content {
+  margin-top: 30px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    max-width: 778px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 127px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.catalog-content__made-info {
+  @media (min-width: $desktop) {
+    width: 1050px;
+  }
+}
+
+.feedback-content {
+  margin: 0;
+  padding: 0;
+}

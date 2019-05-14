@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  color: #000000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    max-width: 1150px;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin btn-reset {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+// @mixin min($device-width) {
+//   @media (min-width: $device-width) {
+//     @content;
+//   }
+// }
+
+// @mixin min($media) {
+//   @if $media == mobile {
+//     @media all and (min-width: $mobile) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media == tablet {
+//     @media all and (min-width: $tablet) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media == desktop {
+//     @media all and (min-width: $desktop) {
+//       @content;
+//     }
+//   }
+// }
