@@ -13,6 +13,7 @@ const deleteLoaderTimer = () => {
   setTimeout(() => {
     showContent(true)
   }, 1200);
+  // showContent(true);
   setTimeout(() => {
     showLine()
   }, 1800);
